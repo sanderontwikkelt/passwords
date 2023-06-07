@@ -40,12 +40,14 @@ const PasswordReducer = (state: PasswordState, action: PasswordActions): Passwor
         ...initialPasswordState,
         [PasswordFields.error]: action.payload,
       };
+
     case ActionTypes.EDIT:
       return {
         ...initialPasswordState,
         ...action.payload,
         editing: action.payload.name,
       };
+
     default:
       return initialPasswordState;
   }
