@@ -11,6 +11,7 @@ const Input = ({
   onChange: (v: string) => void;
   label: string;
   name: string;
+  'data-testid': string;
   className?: string;
   required?: boolean;
 }) => {

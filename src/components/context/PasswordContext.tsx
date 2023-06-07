@@ -23,7 +23,6 @@ type PasswordActions =
 const PasswordReducer = (state: PasswordState, action: PasswordActions): PasswordState => {
   switch (action.type) {
     case ActionTypes.UPDATE_STATE:
-      console.log(action);
       if (!action.field) return state;
       if (action.field === PasswordFields.password)
         return {

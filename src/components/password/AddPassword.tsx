@@ -29,6 +29,7 @@ const AddPassword = () => {
     value: state[PasswordFields[field]],
     label: field,
     name: field,
+    'data-testid': field,
     required: true,
   });
 
@@ -46,11 +47,13 @@ const AddPassword = () => {
           </button>
         </div>
       ) : null}
-      <form onSubmit={onSubmit} className="flex w-full items-end gap-3">
+      <form onSubmit={onSubmit} data-testid="add-password-form" className="flex w-full items-end gap-3">
         <Input {...inputProps('name')} placeholder="e.g. GMAIL_ACCOUNT" />
         <Input {...inputProps('password')} placeholder="e.g. XYHTGN3@556S!" />
         <Select {...inputProps('clientName')} options={clientOptions} defaultOption="No client" />
-        <Button type="submit">Save</Button>
+        <Button type="submit" disabled={!(state.name && state.password)}>
+          Save
+        </Button>
       </form>
     </div>
   );

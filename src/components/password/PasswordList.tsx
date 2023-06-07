@@ -12,7 +12,7 @@ const PasswordList = () => {
       <h2 className="text-3xl text-left mb-6 mt-10">Passwords</h2>
       <div className="min-h-[20rem]">
         {loading || passwords.length ? (
-          <table className="w-full text-left border-separate border-spacing-2">
+          <table data-testid="password-table" className="w-full text-left border-separate border-spacing-2">
             <tbody>
               {
                 (loading ? (
