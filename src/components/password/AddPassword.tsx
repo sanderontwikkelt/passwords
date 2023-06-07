@@ -20,6 +20,7 @@ const AddPassword = () => {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
+    // eslint-disable-next-line no-alert
     if (passwords.some(({ name }) => name === state.name)) return alert('Please pick a unique name');
     return (state.editing ? editPassword : addPassword)(state, passwords, onSuccess, onError);
   };
