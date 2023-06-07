@@ -3,7 +3,7 @@
 In deze repo vind je de mogelijkheid om nieuwe wachtwoorden op te slaan met een naam en eventueel een klant. 
 
 <p>
-  <a href="https://passwords-nu.vercel.app/">Bekijk hier de demo</a>
+  <a href="https://passwords-7oqj.vercel.app/">Bekijk hier de demo</a>
 </p>
 
 ## tech
