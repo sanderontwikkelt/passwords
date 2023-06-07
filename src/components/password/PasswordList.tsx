@@ -18,9 +18,7 @@ const PasswordList = () => {
                 (loading ? (
                   <PulsingRows />
                 ) : (
-                  passwords.map((password) => {
-                    <PasswordRow password={password} />;
-                  })
+                  passwords.map((password) => <PasswordRow password={password} />)
                 )) as ReactNode
               }
             </tbody>
